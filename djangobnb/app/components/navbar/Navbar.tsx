@@ -1,5 +1,7 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import SearchFilter from './SearchFilter'
 
 const Navbar = () => {
   return (
@@ -7,8 +9,18 @@ const Navbar = () => {
       <div className='container-custom'>
         <div className='flex justify-between items-center'>
           <Link href='/'>
-            DjangoBnb
+            <Image
+              src="/logo.png"
+              alt='DjongoAirbnb logo'
+              width={180}
+              height={38}
+            />
           </Link>
+          <SearchFilter />
+
+          <div className=''>
+            Add property
+          </div>
 
         </div>
       </div>
