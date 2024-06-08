@@ -33,7 +33,7 @@ const ConversationDetail = () => {
             <CustomButton
             label='send'
             onClick={() => console.log("testing") }
-            className='w-[100px] text-center'
+            className='w-[100px]'
             />
 
         </div>
