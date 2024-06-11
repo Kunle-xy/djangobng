@@ -5,6 +5,8 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Modal from "./components/modals/Modal";
 import LoginModal from "./components/modals/LoginModal";
+import { Sign } from "crypto";
+import SignupModal from "./components/modals/SignupModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +21,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const content = ( <p>asdf</p>)
-
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -29,10 +29,8 @@ export default function RootLayout({
         {children}
         </div>
         <LoginModal />
-        {/* <Modal
-        label="Modal tests"
-        content={content}
-        isOpen={true}/> */}
+        <SignupModal />
+
       </body>
     </html>
   );
