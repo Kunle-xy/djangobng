@@ -1,2 +1,2 @@
-backend/djangobnb_backend/env
-s
+backend/myenv
+backend/djangobnb_backend/.env.dev
