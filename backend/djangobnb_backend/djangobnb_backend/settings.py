@@ -24,7 +24,7 @@ else:
     ALLOWED_HOSTS = ["64.226.81.32"]
 
 
-# 
+AUTH_USER_MODEL = 'userAccount.User'
 # Application definition
 
 INSTALLED_APPS = [
@@ -34,7 +34,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'userAccount',
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
