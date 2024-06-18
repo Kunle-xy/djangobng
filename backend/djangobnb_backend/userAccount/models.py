@@ -3,8 +3,6 @@ import uuid
 from django.conf import settings
 from django.contrib.auth.models import AbstractBaseUser, UserManager, PermissionsMixin
 
-# Create your models here.
-
 
 class CustomUserManager(UserManager):
     def create_user(self,name,   email, password=None, **extra_fields):
