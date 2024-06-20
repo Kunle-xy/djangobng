@@ -3,7 +3,7 @@ import uuid
 from django.conf import settings
 from django.db import models
 
-from useraccount.models import User
+from userAccount.models import User
 
 
 class Property(models.Model):

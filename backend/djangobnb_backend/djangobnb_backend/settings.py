@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from datetime import timedelta
 
-load_dotenv()
+load_dotenv("../.env.dev")
 
 from pathlib import Path
 
@@ -144,7 +144,7 @@ DATABASES = {
         
     }
 }
-
+# print(DATABASES)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
