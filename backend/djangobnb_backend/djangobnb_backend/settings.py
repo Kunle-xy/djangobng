@@ -22,7 +22,7 @@ SECRET_KEY='#z=!sr*_4g%0q4i50vp*8+!r(0#&3ih!&v-0ybvg4agzyrna@'
 DEBUG = bool(os.environ.get("DEBUG", default=0))
 
 if DEBUG:
-    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "64.226.81.32"]
+    ALLOWED_HOSTS = ["localhost", "127.0.0.1", "64.226.81.32", "*"]
 else:
     ALLOWED_HOSTS = ["64.226.81.32"]
 
