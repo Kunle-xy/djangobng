@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from datetime import timedelta
 
-load_dotenv()
+load_dotenv("../.env.dev")
 
 from pathlib import Path
 
@@ -64,6 +64,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:8000",
 ]
+
+
+CORS_ALLOW_ALL_ORIGINS = True   
 
 REST_AUTH = {
     "USE_JWT": True,
@@ -144,7 +147,7 @@ DATABASES = {
         
     }
 }
-
+# print(DATABASES)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
